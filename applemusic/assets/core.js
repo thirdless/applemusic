@@ -17,6 +17,7 @@ function createWindow() {
            preload: __dirname + "/page.js"
        },
        frame: false,
+       transparent: true,
        icon: __dirname + "/icon.ico"
    });
    nativeTheme.themeSource = "dark";
