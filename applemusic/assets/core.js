@@ -29,4 +29,8 @@ function createWindow() {
 }
 
 //app.disableHardwareAcceleration();
+app.commandLine.appendSwitch('autoplay-policy', 'no-user-gesture-required');
+app.commandLine.appendSwitch('disable-features', 'PreloadMediaEngagementData');
+app.commandLine.appendSwitch('disable-features', 'AutoplayIgnoreWebAudio');
+app.commandLine.appendSwitch('disable-features', 'MediaEngagementBypassAutoplayPolicies');
 app.on('ready', createWindow);
